@@ -1,1 +1,5 @@
 "# Mini-web" 
+
+-> BMI CALCULATOR
+-> IMAGE UPLOAD
+-> STICKY DRAG NOTES

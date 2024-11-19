@@ -44,12 +44,19 @@ body{
  margin: 0 5rem
 }
 .info{
+  background-color: #fdfd96;
+  border: 2px solid #f3c623;
+  border-radius: 10px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  width: auto;
+  max-width: 300px; 
+  min-height: 200px;
+  margin: 1rem auto;
   display: flex;
-  justify-content: center;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
-  margin: 1rem;
+  gap: 1rem; 
 }
 .title{
   padding: 0.5rem 2.5rem;
@@ -58,68 +65,91 @@ body{
   font-size: 1rem;
   border: none;
 }
+.title, .textarea {
+  width: 100%; 
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  outline: none;
+}
+
+.title:focus, .textarea:focus {
+  border-color: #f3c623; 
+}
+
 .submit{
-  padding: 0.5rem 1.2rem;
+  padding: 0.5rem 1rem;
   border: none;
-  background-color: rgb(12, 72, 202);
+  background-color: #e74c3c; 
   color: white;
   font-weight: bold;
-  border-radius: 0.5rem;
+  border-radius: 5px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.submit:hover {
+  background-color: #c0392b; 
 }
 .heading{
-  color: white;
+  color: #333;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 .note-card {
-  background-color: #fdfd96; /* Light yellow for a sticky-note feel */
-  border: 2px solid #f3c623; /* Golden border for a note look */
+  background-color: #fdfd96;
+  border: 2px solid #f3c623;
   border-radius: 10px;
-  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
-  padding: 1rem;
-  width: auto; /* Allow dynamic width */
-  min-width: 200px; /* Minimum width */
-  max-width: 300px; /* Restrict maximum width */
-  min-height: 150px; /* Minimum height */
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+  padding: 0.5rem; 
+  width: auto;
+  min-width: 150px; 
+  max-width: 200px; 
+  min-height: 120px; 
   margin: 0.5rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  transition: transform 0.2s ease; /* Hover effect animation */
+  transition: transform 0.2s ease;
 }
 
 .note-card:hover {
-  transform: scale(1.05); /* Slight enlargement on hover */
+  transform: scale(1.05);
 }
 
 .note-content {
   flex-grow: 1;
-  overflow: auto; /* Enable scrolling for long content */
+  overflow: auto;
 }
 
 .note-title {
   font-family: "Comic Sans MS", cursive, sans-serif;
-  font-size: 1.2rem;
+  font-size: 1rem;
+  border-bottom: #333;
+  margin-bottom: 0.3rem;
   font-weight: bold;
   color: #333;
-  margin-bottom: 0.5rem;
+  text-decoration: underline;
+  text-decoration-style: solid;
 }
 
 .note-details {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 1rem;
-  line-height: 1.5;
+  font-size: 0.9rem; 
+  line-height: 1.4;
   color: #444;
-  white-space: pre-wrap; /* Preserve line breaks */
+  white-space: pre-wrap; 
 }
 
 .note-delete {
-  align-self: flex-end; /* Position delete button at the bottom */
-  padding: 0.3rem 0.6rem;
-  background-color: #e74c3c; /* Bright red */
+  align-self: flex-end; 
+  background-color: #e74c3c; 
   color: white;
   border: none;
   border-radius: 5px;
-  font-size: 0.9rem;
+  padding: 0.2rem 0.4rem; 
+  font-size: 0.8rem; 
   font-weight: bold;
   cursor: pointer;
   transition: background-color 0.3s ease;

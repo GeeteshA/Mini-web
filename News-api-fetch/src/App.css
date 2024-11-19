@@ -1,0 +1,202 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif; 
+}
+
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid rgb(147, 147, 184);
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.logo h2 {
+  font-size: 1.8rem;
+  font-family: 'Times New Roman', Times, serif;
+  color: #333;
+}
+
+.menu {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.menu li {
+  list-style: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.menu li:hover {
+  color: rgb(0, 102, 255); 
+}
+
+.input {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  background-color: aliceblue;
+  transition: background-color 0.3s ease;
+}
+
+.input:focus {
+  background-color: #e0f7fa; 
+  outline: none;
+}
+
+.submit {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: none;
+  background-color: rgb(0, 102, 255);
+  color: white;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit:hover {
+  background-color: rgb(0, 85, 204); 
+}
+
+/* News Card Styling */
+.news-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 1rem;
+  width: 250px;
+  height: 300px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px); 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); 
+}
+
+.img img {
+  object-fit: cover;
+  width: 100%;
+  height: 140px;
+  border-radius: 1rem;
+}
+
+.card-content {
+  text-align: center;
+}
+
+.card-content h4 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 0.5rem;
+  white-space: normal;
+  overflow: hidden;  
+  text-align: center;  
+  max-height: 4.5rem;      
+  line-height: 1.5rem; 
+  
+}
+
+.card-content a {
+  font-size: 1rem;
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.card-content a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+/* Main Content Styling */
+.main-content {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  /* Adjust navbar layout for tablets */
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  .menu {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 1rem;
+  }
+
+  .menu li {
+    margin-bottom: 0.8rem;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .input,
+  .submit {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo h2 {
+    font-size: 1.5rem;
+  }
+
+  .card {
+    width: 100%;
+    height: auto; 
+  }
+
+  .card-content h4 {
+    font-size: 1.1rem;
+  }
+
+  .card-content p {
+    font-size: 0.9rem;
+  }
+
+  .input,
+  .submit {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .navbar {
+    padding: 0.5rem;
+  }
+}

@@ -50,7 +50,7 @@ const App = () => {
           <input 
             className='title'
             type="text" 
-            placeholder='Enter Topic Title'
+            placeholder='Enter Title'
             id='title'
             value={title}
             onChange={(e)=>setTitle(e.target.value)}/>
@@ -59,6 +59,7 @@ const App = () => {
             className='textarea'
             name="stickyinfo" 
             id="stickyinfo"
+            placeholder='Your Text Here'
             rows="5"
             cols="36"
             value={details}

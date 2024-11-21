@@ -8,7 +8,8 @@ const NewsContainer = () => {
     const [ loading, setLoading ] = useState(true);
     const [ error, setError ] = useState(null);
 
-    const apiKey = process.env.API_KEY;
+    const apiKey = `yqqsnvWJScY6Xvt2CnlQ9CpOAi9FZtMccln7KT4nF5vbODNe`;
+    // yqqsnvWJScY6Xvt2CnlQ9CpOAi9FZtMccln7KT4nF5vbODNe
     const url = `https://newsapi.org/v2/top-headlines?country=us&apiKey=${apiKey}`;
 
     useEffect(() => {
@@ -23,7 +24,7 @@ const NewsContainer = () => {
             }
         };
         fetchNews();
-    }, [articles]); 
+    }, []); 
 
     if (error) return <p>{error}</p>;
     if (loading) return <p>Loading...</p>;

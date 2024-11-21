@@ -1,0 +1,16 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+.ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  padding-right: 10px;
+  color: #fff ;
+}
+.active-link {
+  border: 2px red;
+}
